@@ -1,0 +1,95 @@
+*{font-family: sans-serif;}
+body{
+    background-color: azure;
+    display: grid;
+    place-content: center;
+    min-height: 100vh
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.top{
+    background-color: white;
+    width: 600px;
+    padding: 30px;
+}
+h1{
+    color: aqua;
+
+}
+h3{
+    color: chartreuse;
+}
+.foot{
+    display: grid;
+    grid-template-columns: 300px 300px;
+}
+.left{
+    background-color: darkturquoise;
+    padding: 30px;
+    width: 300px;
+    color: white;
+}
+.main{
+    font-size: larger;
+}
+.prize{
+    display: grid;
+    grid-template-columns: 60px 80px;
+}
+.prize p{
+    margin-top: 5px;
+    color: cadetblue;
+}
+span{
+    font-size: 30px;
+}
+button{
+    background-color: chartreuse;
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 240px
+    
+}
+.right{
+    background-color: aqua;
+    width: 300px;
+    padding: 30px;
+}
+.right h1, p2{
+    color: grey;
+
+}
+@media screen and (max-width: 700px) {
+    body{
+        width:430px;
+    }
+    .box{
+        width: 430px;
+        display: flex;
+        flex-direction: column;
+    }
+    .top{
+        width:370px;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column; 
+        width:430px;
+    }
+    .headertext{
+        width: 430px;
+
+    }
+    .left{
+        width: 370px;
+    }
+    .right{
+        width: 370px;
+    }
+}
